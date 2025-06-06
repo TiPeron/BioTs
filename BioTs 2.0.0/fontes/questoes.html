@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Carbono</title>
+  <link rel="icon" type="image/png" href="../img/icon.png">
+  <link rel="stylesheet" href="../styles/questoesstyles.css">
+</head>
+
+<body>
+  <header class="topo">
+    <a href="../index.html" class="logo-link">
+      <img src="../img/icon.png" alt="Logo" class="Logo">
+      <span class="site-title">BioTS</span>
+    </a>
+  </header>
+
+  <div class="faixa">
+    <button class="mudarpag" onclick="home()">Home</button>
+    <button class="mudarpag" onclick="tsp()">Verificar Substância</button>
+    <button class="mudarpag" onclick="qp()">Quiz</button>
+
+        
+  </div>
+  <button id="modo-btn"   onclick="toggleModo()">🌙</button>
+  <div id="page-wrapper">
+    <div id="quiz-container">
+      <div id="coluna-enunciado">
+        <div class="pergunta" id="enunciado"></div>
+      </div>
+      <div id="coluna-opcoes">
+        <div id="opcoes"></div>
+        <div class="feedback" id="feedback"></div>
+      </div>
+    </div>
+  </div>
+  
+  <footer id="versao">
+      Versão 2.0.0
+  </footer>
+
+  <script src="../scripts/mudarpag.js"></script>
+
+  <script src="../scripts/togglemode.js"></script>
+
+  <script src="../scripts/questoes.js"></script>
+
+  
+</body>
+</html>

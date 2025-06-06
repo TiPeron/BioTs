@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Substância</title>
+    <link rel="icon" type="image/png" href="../img/icon.png">
+</head>
+<link rel="stylesheet" type="text/css" href="../styles/TSstyles.css"/>
+<script src="../scripts/TSscript.js"></script>
+</head>
+<body>
+    <header class="topo">
+        <a href="../index.html" class="logo-link">
+            <img src="../img/icon.png" alt="Logo" class="Logo">
+            <span class="site-title">BioTS</span>
+        </a>
+      </header>
+    <div class="faixa">
+        <button class="mudarpag" onclick="home()">Home</button>
+        <button class="mudarpag" onclick="tsp()">Verificar Substância</button>
+        <button class="mudarpag" onclick="qp()">Quiz</button>
+
+        
+    </div>
+    <button id="modo-btn"   onclick="toggleModo()">🌙</button>
+    <div class="container">
+        <h1>Verificar Substância</h1>
+        <input type="text" id="nomeInput" placeholder="Exemplo: H2O, O, Na">
+        <button onclick="analisarSubstancia()">Classificar</button>
+        <p id="resultado"></p>
+        <div class="input-group">
+        <button id="infoButton" onclick="mostrarPopup()" style="display: none;">Mostrar Informações</button>
+        </div>
+    <div id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>Informações dos Elementos</h2>
+        <div id="popupContent"></div>
+        <button onclick="fecharPopup()">Fechar</button>
+    </div>
+    <footer id="versao">
+        Versão 2.0.0
+    </footer>
+
+    <script src="../scripts/mudarpag.js"></script>
+</body>
+</html>

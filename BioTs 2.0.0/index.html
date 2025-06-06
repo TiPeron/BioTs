@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>BioTs</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="styles/homepagestyle.css">
+</head>
+<body>
+    <header class="topo">
+        <a href="index.html" class="logo-link">
+            <img src="img/icon.png" alt="Logo" class="Logo">
+            <span class="site-title">BioTS</span>
+        </a>
+      </header>
+  <div class="faixa">
+        <button class="mudarpag" onclick="home">Home</button>
+        <button class="mudarpag" onclick="tsp()">Verificar Substância</button>
+        <button class="mudarpag" onclick="qp()">Quiz</button>
+
+        
+  </div>
+  <button id="modo-btn"   onclick="toggleModo()">🌙</button>
+  <div class="container">
+
+
+    <h1>Bem-vindo à BioTs🌿</h1>
+    <p>Site criado para projetos acadêmicos propostos em aula. 
+        Aqui você vai encontrar páginas que ajudam nos seus estudos em Biologia
+        e também poderá analisar os códigos usados no site para estudar sobre algoritmos e programação web.
+    </p>
+    <h1>O que você encontra aqui?🔬</h1>
+    <h2>Pesquisa de elementos</h2>
+    <p>Na aba "Verificar Substância", você poderá digitar um elemento, e o programa dirá se ele é simples ou composto.
+        Além disso, será possível encontrar cada elemento digitado e visualizar seu significado e principais características. </p>
+    <h2>Quiz com Feedback</h2>
+    <p>Já na aba "Quiz", você encontrará perguntas (atualmente apenas sobre Carbono) que testarão seus conhecimentos
+         e mostrarão um feedback personalizado para você, escrito pelo professor.</p>
+
+  </div> 
+
+
+
+
+  <footer id="versao">
+      Versão 2.0.0
+  </footer>
+  <script>
+    function tsp(){
+    window.location.href="fontes/Testesubstancia.html"
+    }
+
+    function qp(){
+    window.location.href="fontes/inicioquiz.html"
+    }
+  </script>
+ <script src="scripts/togglemode.js"></script>
+
+
+  
+</body>
+</html>

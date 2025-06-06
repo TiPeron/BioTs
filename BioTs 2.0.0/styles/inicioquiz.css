@@ -1,0 +1,93 @@
+button {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    align-items: center;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f0f8f0;
+  border-color: #007a00;
+}
+
+.container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.dark-mode .site-title{
+    color: white
+  }
+
+  header {
+    position: fixed; /* ou fixed, se quiser que fique fixo ao rolar */
+    top: 0;
+    left: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+  
+  .Logo {
+    height: 50px; /* ajuste conforme o tamanho da imagem */
+    margin-left: 5px;
+  }
+
+
+.site-title { 
+    font-size: 40px;
+    font-weight: bold;
+    color: #002200;
+    text-decoration: none;
+}
+
+
+header a{
+    text-decoration: none;
+}
+.mudarpag{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4); /* leve contorno branco translúcido */
+    border-radius: 8px; /* cantos arredondados */
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    height: auto;
+    line-height: normal;
+    display: inline-block;
+  }
+  
+  .mudarpag:hover{
+    background-color: #009900; /* verde mais claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra leve ao passar o mouse */
+    transform: scale(1.05); /* dá uma leve aumentada ao passar o mouse */
+    border-color: white; /* destaque na borda */
+  }
+
+  #modo-btn {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: rgba(50, 50, 50, 0.6); /* Cinza escuro semi-transparente */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra escura no modo claro */
+  }

@@ -1,0 +1,195 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2E7D32;
+    margin-bottom: 10px;
+    
+    
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border-left: 4px solid #A5D6A7;
+    padding-left: 10px;
+    color: #333;
+
+  }
+  
+  li{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .faixa{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #007a00, #004d00);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 1000;
+    margin-top: 40px;
+    padding-left: 15px;
+    display: flex; /* Deixa os botões em linha */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaço entre os botões, se quiser */
+    
+
+  
+  }
+
+  .container{
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    
+  }
+  
+  #versao {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #666; /* Cor discreta */
+    font-family: Arial, sans-serif;
+  }
+  
+  .dark-mode{
+    background-color: rgb(36, 35, 35);
+  }
+  
+  .dark-mode h1, .dark-mode h2 {
+    color: #E0E0E0; /* Títulos em verde neon */
+  }
+  
+  .dark-mode p {
+    color: #E0E0E0; /* Parágrafos em azul claro */
+  }
+  
+  
+  
+  .dark-mode .faixa-topo {
+    background: linear-gradient(to right, #004d00, #002200);
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.3);
+  }
+  
+  #modo-btn {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: rgba(50, 50, 50, 0.6); /* Cinza escuro semi-transparente */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra escura no modo claro */
+  }
+  
+  #modo-btn:hover {
+    background: rgba(50, 50, 50, 0.8); /* Menos transparência no hover */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Modo escuro */
+  .dark-mode #modo-btn {
+    background: rgba(128, 128, 128, 0.6); /* Cinza claro semi-transparente */
+    color: #E0E0E0;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1); /* Sombra clara no modo escuro */
+  }
+  
+  .dark-mode #modo-btn:hover {
+    background: rgba(128, 128, 128, 0.8); /* Menos transparência no hover */
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2);
+  }
+
+
+  
+
+  .dark-mode .site-title{
+    color: white
+  }
+
+  header {
+    position: fixed; /* ou fixed, se quiser que fique fixo ao rolar */
+    top: 0;
+    left: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+  
+  .Logo {
+    height: 50px; /* ajuste conforme o tamanho da imagem */
+    margin-left: 5px;
+  }
+
+
+.site-title { 
+    font-size: 40px;
+    font-weight: bold;
+    color: #002200;
+    text-decoration: none;
+}
+
+
+header a{
+    text-decoration: none;
+}
+
+.mudarpag{
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4); /* leve contorno branco translúcido */
+  border-radius: 8px; /* cantos arredondados */
+  padding: 8px 16px;
+  margin: 0;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  height: auto;
+  line-height: normal;
+  display: inline-block;
+}
+
+.mudarpag:hover{
+  background-color: #009900; /* verde mais claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra leve ao passar o mouse */
+  transform: scale(1.05); /* dá uma leve aumentada ao passar o mouse */
+  border-color: white; /* destaque na borda */
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
